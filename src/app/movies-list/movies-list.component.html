@@ -1,8 +1,8 @@
 <p>Movie Order Form</p>
 <ul>
     <li *ngFor ='let movie of movies'>
-        {{ movie.title}},
-        {{ movie.catagory}},
+        {{ movie.title }},
+        <span [class.comedy]="movie.catagory === 'comedy'">{{ movie.catagory }}</span </span>>,
         {{ movie.year}}
     </li>
 </ul>
